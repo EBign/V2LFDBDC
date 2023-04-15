@@ -1,0 +1,622 @@
+html{
+  scroll-behavior: smooth;
+  color: black;
+}
+title{
+  transition: all 0.5s ease-in-out;
+}
+@font-face {
+  font-family: "clasicastriped";
+  src: url("Clasica Striped by Marta van EckDEMO.ttf");
+ }
+body{
+height: 3000px;
+background-image: url(alphamegabgwood-min.jpg);
+margin: 0;
+text-align: center;
+display: block;
+}
+header{
+  height: 300px;
+}
+header .share{
+  position: absolute;
+  top: 120px;
+  right: 30px;
+}
+.bandeau{
+  width: 100%;
+  height: auto;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+}
+.bandeau img{
+  height: 60px;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1{
+  color: dimgray;
+  font-family: arial;
+  font-size: 36px;
+  width: 70%;
+  margin-left: 15%;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+h2{
+  color: rgb(58, 49, 30);
+  font-family: clasicastriped;
+  font-weight: lighter;
+  font-size: 120px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 70px;
+}
+.histoire, .actualites{
+  margin-top: 300px;
+  padding-top: 60px;
+}
+.actualite{
+  padding-bottom: 120px;
+}
+.histoire h2, .actualites h2{
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 120px;
+}
+.histoire p{
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 48px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.gerantes{
+  width: 480px;
+  height: auto;
+  float: left;
+  margin-right: 30px;
+  margin-left: 5%;
+  border-radius: 30px;
+}
+.la{
+  color: rgb(58, 49, 30);
+  font-family: clasicastriped;
+  font-weight: lighter;
+  font-size: 50px;
+  background-color: transparent;
+  line-height: 100px;
+}
+.bouttonnav{
+  position: absolute;
+  left: 6%;
+  transform: translateX(-50%);
+  text-align: center;
+  visibility: visible;
+  top: 120px;
+  text-align: center;
+  z-index: 7;
+}
+.barre{
+  width: 55px;
+  height: auto;
+  background-color: transparent;
+  margin-top: 8px;
+}
+#barre2{
+  margin-top: 3px;
+}
+#barre3{
+  width: 30px;
+}
+.croix #barre1{
+  transform: rotate(45deg);
+  transition: 0.2s;
+}
+.croix #barre2{
+  visibility: hidden;
+}
+.croix #barre3{
+  width: 55px;
+  transform: rotate(-45deg) translateY(-20px) translateX(20px);
+  transition: 0.2s;
+}
+.bouttonnav{
+  cursor: pointer;
+}
+nav{
+  width: 100%;
+  height: auto;
+  text-align: left;
+  visibility: hidden;
+  position: absolute;
+  top: 80px;
+  z-index: 6;
+  transition: 0.5s;
+  padding-top: 180px;
+}
+.montrenav{
+  visibility: visible;
+  background-color: rgba(355, 245, 230, 0.90);
+  height: 100%;
+  margin-top: 0;
+}
+ul{
+ width: 600px;
+ align-items: left;
+ padding: 0;
+ display: grid;
+ margin: auto;
+}
+li{
+  list-style: none;
+  margin-bottom: 150px;
+}
+a{
+  text-decoration: none;
+  color: rgb(59, 51, 40);
+  font-family: clasicastriped;
+  font-size: 42px;
+  letter-spacing: 2px;
+  transition-duration: 0.2s;
+}
+a:hover{
+  scale: 1.05;
+}
+nav a{
+  color: rgb(0, 0, 0);
+}
+@keyframes haut{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.action{
+  width: 100%;
+  margin-top: 400px;
+}
+.titrevideo{
+  font-size: 30px;
+  color: floralwhite;
+}
+video{
+  width: 100%;
+  margin-top: 20px;
+}
+.titreavis{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.containavis{
+  width: 100%;
+  overflow: hidden;
+}
+.avis{
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  margin: 0;
+  flex-wrap: nowrap;
+}
+.avi{
+  width: 420px;
+  font-size: 30px;
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: defil 120s infinite;
+}
+@keyframes defil{
+  0%{
+    transform: translateX(0)
+  }
+  50%{
+    transform: translateX(-3000px)
+  }
+  100%{
+    transform: translateX(0)
+  }
+}
+.avi p{
+  width: 420px;
+  text-align: left;
+  flex-shrink: 0;
+}
+.name{
+  font-weight: bold;
+}
+.warning{
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+.cta{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 42px;
+  background-color: #3f3935;
+  border: none;
+  padding: 24px;
+  border-radius: 24px;
+  color: whitesmoke;
+  margin-top: 30px;
+}
+#mailcta{
+  display: none;
+  position: absolute;
+  visibility: hidden;
+}
+.txtproduits{
+  width: 100%;
+  font-size: 60px;
+  margin-top: 300px;
+}
+.produit{
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+}
+.produit img{
+  height: 60%;
+  width: auto;
+}
+.produit p img{
+  width: 90px;
+  height: auto;
+}
+.produit p{
+  width: 50%;
+  margin-left: 25%;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 42px;
+  margin-top: 240px;
+}
+.illu{
+  width: 600px;
+  height: auto;
+  margin-left: 12px;
+  border-radius: 1000px;
+}
+.imgactu {
+  width: 80%;
+  height: auto;
+  border-radius: 30px;
+}
+.actualites p{
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+}
+.share{
+  width: 60px;
+  margin: 30px;
+}
+footer{
+  display: block;
+  height: auto;
+  background-color: rgb(58, 49, 30);
+  color: white;
+  border-top: 2px solid #9e8e85;
+  text-align: center;
+  padding-top: 120px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer h3, footer a{
+  color: white;
+  font-size: 14px;
+}
+#underline{
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+.footerline{
+  width: 100%;
+}
+.footerline img{
+  width: 240px;
+  margin-left: 12px;
+  margin-right: 12px;
+  height: auto;
+}
+footer a{
+  font-family: arial;
+}
+@media screen and (min-width: 1000px){
+  header{
+    height: 60px;
+  }
+  .bandeau{
+    width: 40%;
+    margin-left: 50%;
+    padding-left: 30%;
+    padding-right: 30%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+  }
+  .bandeau img{
+    height: 21px;
+    width: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+   .txtlogo{
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    font-size: 24px;
+    line-height: 16px;
+   }
+   .la{
+    font-size: 15px;
+    line-height: 24px;
+   }
+   .bouttonnav{
+    visibility: hidden;
+   }
+   nav{
+    visibility: visible;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    top: 27px;
+   }
+   nav a{
+    font-size: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 6px;
+    transition: 0.2s ease-in-out;
+   }
+   nav a:hover{
+    font-size: 12px;
+   }
+   ul{
+    width: auto;
+    margin: 0;
+    display: initial;
+    display: flex;
+   }
+   li{
+    margin: 0;
+   }
+   h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-300px);
+    margin-left: 0;
+    padding-left: 0;
+    top: 520px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 600px;
+    line-height: 24px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+   }
+   .action{
+    margin-top: 60px;
+   }
+   video{
+    width: 600px;
+    border-radius: 30px;
+    margin-bottom: 120px;
+    margin-top: 60px;
+   }
+   .share{
+    visibility: hidden;
+   }
+   .avis{
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 92%);
+   }
+   .avi{
+    font-size: 15px;
+   }
+   .cta{
+    visibility: hidden;
+    display: none;
+   }
+   #mailcta{
+    display: initial;
+    visibility: visible;
+    display: initial;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 945px;
+    font-size: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 15px;
+    transition: 0.2s;
+   }
+   #mailcta:hover{
+    cursor: pointer;
+    transform: translateX(-50%) scale(1.05);
+   }
+   #responsivecta{
+    visibility: visible;
+    font-size: 18px;
+    display: initial;
+    padding: 12px;
+    transition: 0.2s;
+   }
+   #responsivecta:hover{
+    transform: scale(1.05);
+   }
+   .descta{
+    font-size: 15px;
+    width: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+    line-height: 24px;
+   }
+   #crop,{
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 97%);
+   }
+   .txtproduits, .histoire h2, .actualites h2{
+    font-size: 30px;
+   }
+   .actualites h2{
+    margin-bottom: 30px;
+   }
+   .histoire h2{
+    margin-bottom: 42px;
+   }
+   .produit p{
+    font-size: 24px;
+    width: 240px;
+    margin-top: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+   }
+   .produit img{
+    height: 360px;
+   }
+   .illu{
+    width: 300px;
+   }
+   .produit p img{
+    width: 30px;
+   }
+   .histoire{
+    padding: 0;
+    width: 720px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+   }
+   .histoire p{
+    line-height: 30px;
+    font-weight: bold;
+    padding-left: 3%;
+    padding-right: 3%;
+   }
+   .gerantes{
+    width: 60%;
+    margin-left: 0;
+    height: auto;
+   }
+   .actualites{
+    padding-top: 0;
+   }
+   .carousselactu{
+    display: flex;
+    justify-content: space-around;
+   }
+   .actualite{
+    width: 420px;
+    padding-bottom: 30px;
+   }
+   .share{
+    width: 42px;
+   }
+   footer{
+    padding-top: 30px;
+    display: flex;
+    position: relative;
+    padding-bottom: 120px;
+   }
+   footer h3{
+    font-size: 18px;
+   }
+   .infos{
+    width: 49%;
+    margin-bottom: 60px;
+   }
+   .partners{
+    width: 40%;
+   }
+   .footerline{
+    display: flex;
+    justify-content: space-around;
+   }
+   .footerline img{
+    width: 30%;
+   }
+   .end{
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 49%;
+    text-align: center;
+   }
+}
+
+@media screen and (min-width: 1270px){
+  video{
+    width: 900px;
+  }
+  nav a{
+    font-size: 13px;
+    padding-left: 12px;
+  }
+  nav a:hover{
+    font-size: 15px;
+  }
+  h1{
+    top: 690px;
+    left: 50%;
+    transform: translateX(-450px);
+  }
+  #mailcta{
+    top: 1119px;
+  }
+  .caroussel{
+    display: flex;
+    justify-content: space-around;
+  }
+  .produit{
+    margin-top: 0;
+  }
+  .produit img{
+    height: 240px;
+  }
+  .produit p{
+    font-size: 21px;
+    margin-top: 0;
+  }
+  .histoire{
+    margin-top: 210px;
+  }
+  .actualites{
+    margin-top: 210px;
+    margin-bottom: 60px;
+  }
+  .actualites a{
+    display: none;
+  }
+}
+@media screen and (min-width: 1570px){
+  .produit img{
+    height: 300px;
+  }
+  .end{
+    bottom: initial;
+    top: 300px;
+  }
+  .footerline img{
+    width: 24%;
+  }
+}
+@media screen and (min-width: 1700px){
+  .produit img{
+    height: 360px;
+  }
+}
