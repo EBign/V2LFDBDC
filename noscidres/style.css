@@ -453,6 +453,16 @@ footer a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
    }
+   .argumentaire{
+    position: absolute;
+    left: 49%;
+    top: 420px;
+    text-align: justify;
+    width: 450px;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
    .action{
     margin-top: 120px;
    }
